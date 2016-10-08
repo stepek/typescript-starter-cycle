@@ -7,7 +7,7 @@
     "postinstall": "typings install",
     "dev": "concurrently \"webpack --watch\" \"lite-server\"",
     "start": "npm run dev",
-    "test": "mocha -r ts-node/register src/**/*test.ts"
+    "test": "mocha -r ts-node/register src/**/test.ts"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "xstream": "^5.2.0"
   },
   "devDependencies": {
+    "@cycle/xstream-adapter": "^3.0.3",
     "chai": "^3.5.0",
     "concurrently": "^2.2.0",
     "lite-server": "^2.2.2",

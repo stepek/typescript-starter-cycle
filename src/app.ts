@@ -11,7 +11,7 @@ interface ISinks {
   dom: Stream<VNode>;
 }
 
-function main(sources: ISources): ISinks {
+export function main(sources: ISources): ISinks {
   const dom = sources.dom;
   const sinks: ISinks = {
     dom: dom.select('.field').events('input')
