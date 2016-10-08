@@ -6,7 +6,8 @@
   "scripts": {
     "postinstall": "typings install",
     "dev": "concurrently \"webpack --watch\" \"lite-server\"",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "test": "mocha -r ts-node/register src/**/*test.ts"
   },
   "repository": {
     "type": "git",
